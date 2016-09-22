@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  ZMZCALayer
+//
+//  Created by CiHon-IOS2 on 16/9/21.
+//  Copyright © 2016年 walkingzmz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define SYS_VERSION [[UIDevice currentDevice] systemVersion]
+
+#define RGBA_Color(R,G,B,A)  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+//横向比例
+#define WidthScale(number) ([UIScreen mainScreen].bounds.size.width/375.*(number))
+//纵向比例
+#define HeightScale(number) ([UIScreen mainScreen].bounds.size.height/667.*(number))
+
+
+
+#endif /* PrefixHeader_pch */
